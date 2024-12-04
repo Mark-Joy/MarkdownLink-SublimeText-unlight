@@ -1,0 +1,53 @@
+[
+  {
+    "caption": "Preferences",
+    "mnemonic": "n",
+    "id": "preferences",
+    "children":
+    [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children":
+        [
+          {
+            "caption": "Markdown Link",
+            "children":
+            [
+              {
+                "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/MarkdownLink/Default.sublime-keymap",
+                  "user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+                  "default": "[\n$0\n]\n"
+                }
+              },
+              {
+                  "caption": "-"
+              },
+              {
+                  "caption": "README",
+                  "command": "open_file",
+                  "args": {
+                      "file": "${packages}/MarkdownLink/README.md"
+                  }
+              },
+              {
+                  "caption": "CHANGELOG",
+                  "command": "open_file",
+                  "args": {
+                      "file": "${packages}/MarkdownLink/CHANGELOG.md"
+                  }
+              },
+              {
+                  "caption": "-"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
